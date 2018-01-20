@@ -54,7 +54,8 @@ header{
 	width: 40px;
 }
 .container-fluid{
-	position: absolute;
+	position: fixed;
+	z-index: 1;
 	top: 50px;
 	left: 0;
 	right: 0;
@@ -74,18 +75,13 @@ header{
     margin-top: 8px;
 
 }
-ul{
-	position: absolute;
-	z-index: -1;
-}
 .content{
 	list-style: none;
 	position: relative;
 	top: 84px;
 }
 .content li{
-	border-top: 1px solid grey;
-	border-bottom: 1px solid grey;
+	border-top: 0.5px solid grey;
 	border-collapse: collapse;
 }
 .icon1{
@@ -133,7 +129,11 @@ ul{
 .xia{
 	color: grey;
 }
-
+.end{
+	border-top: 0.5px solid grey;
+	height: 60px;
+	width: 100%;
+}
 
 
 
