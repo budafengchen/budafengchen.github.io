@@ -64,21 +64,43 @@ header{
 .col-xs-4{	
 	padding: 0;
 	width: 33%;
+	border:1px solid #ccc; 
+	border-width:0 1px;
+	border-image: linear-gradient(to bottom,#fff,grey,#fff) 1 1;
 }
+/*.line_border:before{
+	background-image: linear-gradient(to bottom,red,black,red);
+	width: 1px;
+	height: 34px;
+	content:"";
+	position: absolute;
+}
+.line_border:after{
+	background-image: linear-gradient(to bottom,red,black,red);
+	width: 1px;
+	height: 34px;
+	content:"";
+	position: absolute;
+}*/
 .btn{
 	border-radius: 0;
 	background-color: white;
 	color: grey;
 }
+.dropdown-menu{
+	min-width: inherit;
+}
+
 .caret{
     float: right;
     margin-top: 8px;
-
 }
 .content{
 	list-style: none;
 	position: relative;
 	top: 84px;
+	left: 0;
+	right: 0;
 }
 .content li{
 	border-top: 0.5px solid grey;
@@ -109,6 +131,15 @@ header{
 	font-weight: 700;
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+
+}
+.wenzi{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
 }
 .jiantou{
 	display: inline-block;
@@ -119,7 +150,8 @@ header{
 	transform: rotate(45deg);
 	border-color: #5fc0cd;
 	vertical-align: middle;
-	margin-left: 10px;
+	margin-left: 3px;
+	margin-right: 5px;
 }
 .zhong div{
 	display: inline-block;
@@ -134,14 +166,6 @@ header{
 	height: 60px;
 	width: 100%;
 }
-
-
-
-
-
-
-
-
 footer{
 	height: 50px;
 	background-color: white;
